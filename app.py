@@ -2,6 +2,7 @@ import datetime
 from flask import Flask, render_template, request, url_for,redirect
 from flask_sqlalchemy import SQLAlchemy
 
+#app config
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://rihlwxzfygidkw:a09e10b3c7cf038b9a9463cfc78f4355fdb23a94f97a818756bd006ca5c2a8bd@ec2-54-225-113-7.compute-1.amazonaws.com:5432/detlkhh9n3dev0'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
@@ -45,3 +46,4 @@ def delete(id):
   return redirect(url_for('index'))
 
 
+#code written by wilfred
